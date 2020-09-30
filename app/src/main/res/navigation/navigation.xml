@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/flowerFragment">
+
+    <fragment
+        android:id="@+id/flowerFragment"
+        android:name="com.myanmaritc.recyclerview.FlowerFragment"
+        android:label="fragment_flower"
+        tools:layout="@layout/fragment_flower" >
+        <action
+            android:id="@+id/action_flowerFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.myanmaritc.recyclerview.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" >
+        <argument
+            android:name="name"
+            app:argType="string"
+            android:defaultValue="default" />
+        <argument
+            android:name="image"
+            app:argType="integer" />
+    </fragment>
+</navigation>
