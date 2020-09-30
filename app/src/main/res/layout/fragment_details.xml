@@ -8,6 +8,7 @@
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:id="@+id/tv_floweDetail"
+        android:textSize="16sp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
          />
